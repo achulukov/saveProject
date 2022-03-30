@@ -49,7 +49,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        File saveDir = new File("C:/Games/savegames");
+        File saveDir = new File("C:/Study/Games/savegames");
 
         GameProgress player1 = new GameProgress(82,3, 32, 54.2);
         GameProgress player2 = new GameProgress(76,1, 15, 10.4);
@@ -59,10 +59,10 @@ public class Main {
         saveGame(player2, "C:/Games/savegames/save2.dat");
         saveGame(player3, "C:/Games/savegames/save3.dat");
 
-        zipFiles("C:/Games/savegames/zip.zip",
-                "C:/Games/savegames/save1.dat",
-                "C:/Games/savegames/save2.dat",
-                "C:/Games/savegames/save3.dat");
+        zipFiles("C:/Study/Games/savegames/zip.zip",
+                "C:/Study/Games/savegames/save1.dat",
+                "C:/Study/Games/savegames/save2.dat",
+                "C:/Study/Games/savegames/save3.dat");
 
         for (File item : saveDir.listFiles()){
             if (!item.getName().equals("zip.zip")) item.delete();
